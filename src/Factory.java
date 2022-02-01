@@ -23,7 +23,7 @@ public class Factory extends Thread {
 
     @Override
     public void run() {
-        while (((System.currentTimeMillis() - TIME_START) < TIME_WORK) || storageApple.get() < 4)
+        while ((System.currentTimeMillis() - TIME_START) < 40000)
         {
             System.out.println("Времени от начала программы: " + (System.currentTimeMillis() - TIME_START)/1000 + " c.");
             if (storageApple.get() >= 4) {
